@@ -1,19 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { Stack, Link } from 'expo-router'
 
-const NotFoundScreen = () => {
+const AboutScreen = () => {
   return (
-    <>
-    <Stack.Screen options={{ title: 'Oops! Not Found'}} />
     <View style={styles.container}>
-        <Link href="/(tabs)/index" style={styles.button}>Go back to Home screen!</Link>
+      <Text style={styles.text}>About Screen</Text>
     </View>
-    </>
   )
 }
 
-export default NotFoundScreen
+export default AboutScreen
 
 const styles = StyleSheet.create({
     container: {
@@ -22,9 +18,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    button: {
-        fontSize: 20,
-        textDecorationLine: 'underline',
+    text: {
         color: '#fff',
     },
-});
+})
